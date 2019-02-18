@@ -36,7 +36,6 @@ class _ListPageState extends State<ListPage> {
             child: new ListView.builder(
               itemCount: currencies.length,
               itemBuilder: (BuildContext context, int index) {
-                
                 final Map currency = currencies[index];
                 final MaterialColor color = _colors[index % _colors.length];
                 return _getListItemUi(currency, color);
